@@ -23,4 +23,21 @@ This should return:
 
 
 ## Running tests
-`pytest movies/tests.py --cov=movies`
+`pytest single_container/tests.py --cov=single_container`
+
+This should return:
+```
+single_container/tests.py .                                                                 [100%]
+
+---------- coverage: platform darwin, python 3.8.6-final-0 -----------
+Name                             Stmts   Miss  Cover
+----------------------------------------------------
+single_container/__init__.py         0      0   100%
+single_container/__main__.py        14     14     0%
+single_container/containers.py      13      0   100%
+single_container/services.py        29     14    52%
+single_container/tests.py           14      0   100%
+----------------------------------------------------
+TOTAL                               70     28    60%
+
+```
